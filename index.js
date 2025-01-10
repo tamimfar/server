@@ -3,10 +3,8 @@ import connectionDB from './config/db.js';
 import dotenv from 'dotenv'
 import cors from 'cors'
 dotenv.config();
-import {
-    Router
-} from './Router/routes.js'
-import Router1 from './Router/nameroutes.js';
+ import Router from './Router/routes.js';
+ 
 
 const PORT = process.env.PORT
 
@@ -17,7 +15,6 @@ app.use(express.urlencoded({
 }))
 app.use(cors())
 app.use(Router)
-app.use(Router1)
 
 
 app.listen(PORT, () => {
