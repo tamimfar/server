@@ -9,7 +9,7 @@ export const hello = async(req,res)=>{
     })
     } catch (error) {
        return res.send({
-            error
+            error,mas:"hello"
         })
     }
  
